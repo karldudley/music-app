@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-function Person() {
+function Artist() {
 
 const params = useParams()
 
@@ -10,4 +10,4 @@ const params = useParams()
   );
 }
 
-export default Person;
+export default Artist;

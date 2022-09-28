@@ -1,5 +1,5 @@
-export { default as About } from './About'
+export { default as Add } from './Add'
 export { default as Home } from './Home'
-export { default as People } from './People'
-export { default as Person } from './Person'
+export { default as Artists } from './Artists'
+export { default as Artist } from './Artist'
 export { default as NotFound } from './NotFound'

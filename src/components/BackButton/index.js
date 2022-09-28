@@ -7,8 +7,8 @@ function BackButton() {
 
   return (
     <>
-      <button onClick={() => navigate(-1)}>Back</button>
-      <button onClick={() => navigate('/')}>Home</button>
+      <button className="back" onClick={() => navigate(-1)}>Back</button>
+      {/* <button onClick={() => navigate('/')}>Home</button> */}
     </>
   );
 }

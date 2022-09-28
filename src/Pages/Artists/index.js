@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
-function People() {
+function Artists() {
   return (
-    <div className="content">
+    <div>
 
     
-      <h1>Handy list of people</h1>
+      <h1>Artist Info</h1>
 
       <br />
 
@@ -22,4 +22,4 @@ function People() {
   );
 }
 
-export default People;
+export default Artists;

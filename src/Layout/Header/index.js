@@ -1,20 +1,21 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
-import './style.css'
 import { BackButton } from '../../components'
 
 function Header() {
-  const activeClass = (({ isActive }) => isActive ? 'current' : undefined)
+  const activeClass = (({ isActive }) => isActive ? 'active' : 'notactive')
 
 
   return (
-    <ul>
-      <NavLink className={activeClass} to="/" end>Home</NavLink>
-      <NavLink className={activeClass} to="people">People</NavLink>
-      <NavLink className={activeClass} to="about">About</NavLink>
-      <BackButton/>
-    </ul>
+    <nav className="navbar">
+      <h1>My Playlists</h1>
+      <div className="links">
+        <NavLink className={activeClass} to="/" end>Home</NavLink>
+        <NavLink className={activeClass} to="artists">Artists</NavLink>
+        <NavLink className={activeClass} to="add">Add</NavLink>
+        <BackButton id = "back" />
+      </div>
+    </nav>
   );
 }
 
