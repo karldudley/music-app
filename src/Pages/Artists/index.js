@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function Artists() {
   return (
@@ -10,15 +10,13 @@ function Artists() {
 
       <br />
 
-      <Link to="Daughters">Daughters</Link>
+      <Link to="1">Daughters</Link>
       <br />
-      <Link to="Death Grips">Death Grips</Link>
+      <Link to="2">Death Grips</Link>
       <br />
-      <Link to="Nirvana">Nirvana</Link>
+      <Link to="3">Nirvana</Link>
       <br />
-      <Link to="Le Tigre">Le Tigre</Link>
-
-      <Outlet />
+      <Link to="4">Le Tigre</Link>
 
     </div>
   );

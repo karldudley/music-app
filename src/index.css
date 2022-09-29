@@ -61,6 +61,9 @@
     color: #f1356d;
     margin-bottom: 8px;
 }
+.track-details a{
+    text-decoration: none;
+}
 #fave {
     cursor: pointer;
 }

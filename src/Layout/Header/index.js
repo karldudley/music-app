@@ -11,8 +11,8 @@ function Header() {
       <h1>My Playlists</h1>
       <div className="links">
         <NavLink className={activeClass} to="/" end>Home</NavLink>
-        <NavLink className={activeClass} to="artists">Artists</NavLink>
-        <NavLink className={activeClass} to="add">Add</NavLink>
+        <NavLink className={activeClass} to="/artists">Artists</NavLink>
+        <NavLink className={activeClass} to="/add">Add</NavLink>
         <BackButton id = "back" />
       </div>
     </nav>

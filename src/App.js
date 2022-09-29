@@ -11,10 +11,9 @@ function App() {
       <div className="content">
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="artists" element={<Artists />}>
-          <Route path=":name" element={<Artist />}></Route>
-        </Route>
-        <Route path="add" element={<Add />}></Route>
+        <Route path="/artists" element={<Artists />}></Route>
+        <Route path="/artists/:id" element={<Artist />}></Route>
+        <Route path="/add" element={<Add />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
       
@@ -25,3 +24,22 @@ function App() {
 }
 
 export default App;
+
+
+
+    // <div className="App">
+    //   <Header />
+
+    //   <div className="content">
+    //   <Routes>
+    //     <Route path="/" element={<Home />}></Route>
+    //     <Route path="artists" element={<Artists />}>
+    //       <Route path=":name" element={<Artist />}></Route>
+    //     </Route>
+    //     <Route path="add" element={<Add />}></Route>
+    //     <Route path="*" element={<NotFound />}></Route>
+    //   </Routes>
+      
+    //   <Footer />
+    //   </div>
+    // </div>
