@@ -1,0 +1,32 @@
+{
+    "artists": [
+        {
+            "artist": "Daughters", 
+            "name": "The reason they hate me", 
+            "year": 2018, 
+            "liked": false, 
+            "id": 1
+        },
+        {
+            "artist": "Death Grips", 
+            "name": "I've seen the footage", 
+            "year": 2012, 
+            "liked": false, 
+            "id": 2
+        },
+        {
+            "artist": "Nirvana", 
+            "name": "Aneurysm", 
+            "year": 1992, 
+            "liked": false, 
+            "id": 3
+        },
+        {
+            "artist": "Le Tigre", 
+            "name": "Deceptacon", 
+            "year": 1999, 
+            "liked": false, 
+            "id": 4
+        }
+    ]
+}
