@@ -4,11 +4,13 @@ import { useParams } from 'react-router-dom'
 function Artist() {
 
 const params = useParams()
-console.log(params);
+const wikiURL = `https://en.wikipedia.org/wiki/${params.name}_(band)`
   return (
     
-    
-    <h1>{params.name}</h1>
+    <>
+      <h1>{params.name}</h1>
+      <a href={wikiURL}>Wiki</a>
+    </>
   );
 }
 
