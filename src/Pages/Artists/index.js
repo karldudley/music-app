@@ -1,23 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import useAxios from '../../hooks/useAxios'
 
 function Artists() {
+  const { data: tracks, isPending } = useAxios('https://music-app-db-kd.herokuapp.com/artists')
+
   return (
     <div>
-
-    
-      <h1>Artist Info</h1>
-
-      <br />
-
-      <Link to="1">Daughters</Link>
-      <br />
-      <Link to="2">Death Grips</Link>
-      <br />
-      <Link to="3">Nirvana</Link>
-      <br />
-      <Link to="4">Le Tigre</Link>
-
+      { isPending && <div>Loading...</div> }
+      {(tracks) && 
+      
+      <div className="track-list"> 
+          {tracks.map((track) => (
+              <div className="track-details" key={track.id}>
+                  <a href={`https://www.youtube.com/results?autoplay=1&search_query=${track.name}_${track.artist}`}>
+                    <h3>{ track.artist }</h3>
+                  </a>
+              </div>
+          ))}
+        </div>
+      }
     </div>
   );
 }

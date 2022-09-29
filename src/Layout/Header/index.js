@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <nav className="navbar">
-      <h1>My Playlists</h1>
+      <h1>My Jams</h1>
       <div className="links">
         <NavLink className={activeClass} to="/" end>Home</NavLink>
         <NavLink className={activeClass} to="/artists">Artists</NavLink>

@@ -13,6 +13,9 @@ function useAxios(url) {
                 const { data } = await axios.get(url)
                 setData(data)
                 setIsPending(false)
+                console.log(data);
+                
+                
             } catch (error) {
                 console.log(error)
             } 

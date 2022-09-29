@@ -2,10 +2,9 @@ import React from 'react';
 import { Link } from "react-router-dom"
 import { FaveButton } from '../../components'
 
-const TrackList = ({ tracks, playlist, handleLike }) => {
+const TrackList = ({ tracks, handleLike }) => {
     return ( 
         <div className="track-list">
-            <h2>{playlist}</h2>
             {tracks.map((track) => (
                 <div className="track-details" key={track.id}>
                     <Link to={`/artists/${track.id}`}>

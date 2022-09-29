@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <h1>Footer</h1>
+    <h5 id="footer">&copy; Copyright Karl Dudley (futureproof trainee) 2022</h5>
   );
 }
 
