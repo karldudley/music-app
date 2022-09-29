@@ -10,11 +10,13 @@ function Artists() {
 
       <br />
 
-      <Link to="Mike">Mike</Link>
+      <Link to="Daughters">Mike</Link>
       <br />
-      <Link to="Romeo">Romeo</Link>
+      <Link to="Death Grips">Romeo</Link>
       <br />
-      <Link to="Shaw">Shaw</Link>
+      <Link to="Nirvana">Shaw</Link>
+      <br />
+      <Link to="Le Tigre">Shaw</Link>
 
       <Outlet />
 
