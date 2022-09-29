@@ -18,14 +18,9 @@ function useAxios(url) {
                 console.log(error)
             } 
         }
-        //simulate data request taking half a second
-        setTimeout(() => {
-            fetchStudents();
-        },500)
-        
-
+        fetchStudents();
         //only fetch once when the website loads
-    }, [url])
+    }, [])
 
   return { data, setData, isPending}
 }
