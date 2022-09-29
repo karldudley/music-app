@@ -7,7 +7,6 @@ function useAxios(url) {
     const [isPending, setIsPending] = useState(true);
 
     useEffect(() => {
-
         //NEW AXIOS METHOD
         const fetchStudents = async() => {
             try {
@@ -20,7 +19,7 @@ function useAxios(url) {
         }
         fetchStudents();
         //only fetch once when the website loads
-    }, [])
+    }, [url])
 
   return { data, setData, isPending}
 }
